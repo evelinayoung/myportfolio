@@ -34,6 +34,8 @@
 .navbar ul li a:hover {
     background-color: white;
     color:purple;
+    box-shadow:rgb(0, 0, 10px, .5);
+    text-shadow: white ;
 
 }
 
@@ -78,3 +80,6 @@
  }
 
  /* About Me */
+ #about{
+     padding: 10x;
+ }
