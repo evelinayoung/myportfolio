@@ -33,8 +33,26 @@
 }
 .navbar ul li a:hover {
     background-color: white;
-    color:black;
+    color:purple;
 
 }
 
 /* Main About Me*/
+
+#home:{
+    display: flex;
+    flex-direction:column; 
+    color: white; 
+}
+
+#home::before{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  background: url('../imgaes/IMG_4989.jpg') no-repeat center/cover;
+  height: 400px;
+  width: 100%;
+  z-index: -1;
+  
+}
