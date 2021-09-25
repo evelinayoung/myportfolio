@@ -120,7 +120,14 @@ html{
 hr.rounded {
     border-top: 3px solid green;
     bottom: 10px;
+    border-radius: 50%;}
+
+hr.rounded3 {
+    border-top: 3px solid green;
+    bottom: 10px;
+    border-radius: 50%;
 }
+
 /*projects*/
 
 #projects{
@@ -137,6 +144,7 @@ hr.rounded {
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
+    border-radius: 50%;
 }
 #snapshot img {
     width: 360px;
@@ -147,4 +155,34 @@ hr.rounded {
     background-color:white;
     color: white;
     padding: 1px;
+}
+/*Contact Me*/
+#contact{
+    flex-direction: column;
+    align-content: center;
+    padding-top: 50px;
+}
+#icons{
+    flex-direction: row;
+    display:inline-block;
+    box-sizing: content-box;
+    align-content: center;
+}
+#icons img {
+width:100px;
+height: 100px;
+padding-top:100px;
+padding: 10px;
+margin: 20px;
+}
+
+#icons a{
+    text-decoration: none;
+}
+#icons a:hover{
+    cursor: pointer;
+    box-shadow: teal;
+    box-sizing: border-box;
+
+    
 }
