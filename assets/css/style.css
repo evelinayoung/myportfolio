@@ -12,7 +12,7 @@
     align-items: center;
     background-color:lightgray;
     top:0;
-    position: ;
+    position: center;
 }
 
 .navbar ul {
@@ -42,32 +42,31 @@
 /* Main intro Me*/
 
 #home {
-    display: flex;
-    flex-direction: column ; 
+    display: flex ;
+    flex-direction: row ; 
     color: white; 
     height: 300px;
     justify-content: center;
-    align-items:center;
-
+    position: center;
 }
 
 #home::before{
   content:'';
   position:absolute;
   top:0;
-  right:0;
+  margin:0;
   background: url('../imgaes/IMG_4989.jpg') no-repeat center/cover;
   height: 500px;
   width: 100%;
   z-index: -1;
-  opacity: .9;
+  opacity: .7;
   
 }
 .main{
     display: flex;
     flex-direction: column;
     border: 5px solid white ; 
-    align-items: left;
+    align-items: center;
     top:30%;
     right: 10%;
     position:relative;
@@ -75,11 +74,73 @@
  .headings {
      font-size: 50px;
      text-align: center;
-     margin:40px 40px 40px 4px;
-     padding:10% ;
+     margin:20p 5px;
+     padding: 100px;
  }
 
  /* About Me */
  #about{
-     padding: 10x;
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     padding: 85px;
+     margin-bottom: 5px;
+     
  }
+ 
+ #pic {
+     display: flex;
+ }
+
+ #pic img{
+     height: 450px;
+     width: 650px;
+     box-sizing: border-box;
+     padding: 50px;
+     margin: 10px;
+ }
+    
+ #intro{
+     text-align: justify;
+     box-sizing: border-box;
+     padding: 50px;
+     padding-bottom: 50px;
+
+
+ }
+#intro h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+hr.rounded {
+    border-top: 3px solid green;
+    bottom: 5px;
+}
+/*projects*/
+
+#projects{
+    display:flex;
+    flex-direction: column;
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+    align-items: center;
+    padding:50px ;
+}
+#snapshot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+#snapshot img {
+    width: 360px;
+    height: 240px;
+    margin: 5px;
+}
+#snapshot a:hover{
+    background-color:white;
+    color: white;
+    padding: 1px;
+}
