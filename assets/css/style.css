@@ -5,14 +5,16 @@
     box-sizing: border-box;
 }
 /* navigation */
-
+html{
+    scroll-behavior: smooth;
+}
 .navbar {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:lightgray;
-    top:0;
-    position: center;
+    background-color:rgba(0,0,0,0.4);
+    top:0px;
+    position: sticky;
 }
 
 .navbar ul {
@@ -28,15 +30,14 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: green;
+    color: white;
     padding: 10px ;
 }
 .navbar ul li a:hover {
     background-color: white;
-    color:purple;
+    color:green;
     box-shadow:rgb(0, 0, 10px, .5);
     text-shadow: white ;
-
 }
 
 /* Main intro Me*/
@@ -47,19 +48,20 @@
     color: white; 
     height: 300px;
     justify-content: center;
-    position: center;
+    position: left;
+    text-align: left;
 }
 
 #home::before{
   content:'';
   position:absolute;
-  top:0;
-  margin:0;
+  top:0px;
+  margin:0px;
   background: url('../imgaes/IMG_4989.jpg') no-repeat center/cover;
   height: 500px;
   width: 100%;
   z-index: -1;
-  opacity: .7;
+  opacity: .8;
   
 }
 .main{
@@ -74,8 +76,9 @@
  .headings {
      font-size: 50px;
      text-align: center;
-     margin:20p 5px;
+     margin:20px 5px;
      padding: 100px;
+     padding-top: 50px;
  }
 
  /* About Me */
@@ -83,8 +86,8 @@
      display: flex;
      flex-direction: column;
      box-sizing: border-box;
-     padding: 85px;
-     margin-bottom: 5px;
+     padding: 100px;
+     margin-bottom: 20px;
      
  }
  
@@ -97,11 +100,11 @@
      width: 650px;
      box-sizing: border-box;
      padding: 50px;
-     margin: 10px;
+     margin: 50px;
  }
     
  #intro{
-     text-align: justify;
+     text-align: center;
      box-sizing: border-box;
      padding: 50px;
      padding-bottom: 50px;
@@ -116,7 +119,7 @@
 
 hr.rounded {
     border-top: 3px solid green;
-    bottom: 5px;
+    bottom: 10px;
 }
 /*projects*/
 
@@ -126,7 +129,8 @@ hr.rounded {
     background-color:rgba(0,0,0,0.3);
     color:white;
     align-items: center;
-    padding:50px ;
+    padding:20px ;
+    top:5px;
 }
 #snapshot{
     display: flex;
